@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/Photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Person Photo"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="  Name:   "
+            android:textColor="@color/black"
+            ></TextView>
+        <EditText
+            android:id="@+id/nameET"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint=""
+            android:maxLength="11"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            ></EditText>
+        ></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Idiograph:   "
+            android:textColor="@color/black"
+            ></TextView>
+        <EditText
+            android:id="@+id/idiographET"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint=""
+            android:maxLength="11"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            ></EditText>
+        ></LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="  Sex:   "
+            android:textColor="@color/black"
+            ></TextView>
+        <EditText
+            android:id="@+id/sexET"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint=""
+            android:maxLength="11"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            ></EditText>
+        ></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="  Age:   "
+            android:textColor="@color/black"
+            ></TextView>
+        <EditText
+            android:id="@+id/ageET"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint=""
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            ></EditText>
+        ></LinearLayout>
+
+    <Button
+        android:id="@+id/SaveInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Info"
+        />
+
+    <Button
+        android:id="@+id/CollectPersonImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Collect Person Image"
+        />
+
+    <ImageView
+        android:id="@+id/pictureStored"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+
+
+
+
+</LinearLayout>
