@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomSpinnerStyle" parent="Widget.AppCompat.Spinner">
+        <item name="android:textSize">18sp</item> <!-- 设置字体大小 -->
+        <item name="android:textColor">#ED8380</item> <!-- 设置字体颜色 -->
+    </style>
+</resources>

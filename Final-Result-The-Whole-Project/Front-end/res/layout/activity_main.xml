@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/zaranone"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=" Sign in "
+        android:textSize="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/Black28"
+        ></TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="  Account:   "
+            android:textColor="@color/black"
+            ></TextView>
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="   Please input your account"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray65"
+            ></EditText>
+        ></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Passward:  "
+            android:textColor="@color/black"
+            ></TextView>
+        <EditText
+            android:id="@+id/passward"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="   Please input your passward"
+            android:maxLength="18"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray65"
+            ></EditText>
+        ></LinearLayout>
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember"
+        android:layout_alignLeft="@id/passward"
+        android:layout_below="@id/passward"
+        />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="140dp"
+        android:background="@drawable/rounded_button_seven"
+        android:layout_marginTop="16dp"
+        android:text="   Login  " />
+
+    <Button
+        android:id="@+id/regester"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="register"
+        android:layout_marginLeft="140dp"
+        android:background="@drawable/rounded_button_seven"
+        android:layout_marginTop="16dp"
+
+
+        />
+
+    <Button
+        android:id="@+id/facialRecognition"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="178dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/carama" />
+
+    <ImageView
+        android:id="@+id/facialPicture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+</LinearLayout>

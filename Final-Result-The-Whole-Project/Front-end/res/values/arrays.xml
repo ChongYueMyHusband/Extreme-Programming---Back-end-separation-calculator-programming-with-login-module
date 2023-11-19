@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="deposit_loan_options">
+        <item>Deposit</item>
+        <item>Loan</item>
+    </string-array>
+
+    <string-array name="duration_options">
+        <item>Current Deposit</item>
+        <item>Three months</item>
+        <item>Six months</item>
+        <item>One Year</item>
+        <item>Two Years</item>
+        <item>Two Years</item>
+        <item>Three Years</item>
+        <item>Four Years</item>
+        <item>Five Years</item>
+    </string-array>
+</resources>

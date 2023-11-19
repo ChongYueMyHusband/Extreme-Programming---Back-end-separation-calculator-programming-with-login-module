@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/graduallyblacktwo"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/pictureStored"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/photo"
+        android:background="@drawable/circle_background"
+        android:layout_marginTop="30dp"
+        android:clipToOutline="true"
+        />
+
+    <Button
+        android:id="@+id/Photo"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:text="Person Photo"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button_four"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nameET"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:hint="Name: "
+                android:inputType="text"
+                android:maxLength="20"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/idiographET"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:hint="Idiograph: "
+                android:inputType="text"
+                android:maxLength="20"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sexET"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:hint="Sex: "
+                android:inputType="text"
+                android:maxLength="20"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ageET"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:hint="Age: "
+                android:inputType="text"
+                android:maxLength="20"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/SaveInfo"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Save Info"
+        android:layout_marginRight="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="1dp"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_button_six"
+        />
+
+    <Button
+        android:id="@+id/CollectPersonImage"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Taking Photo"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_button_five"
+        />
+
+
+
+
+
+
+
+
+</LinearLayout>
