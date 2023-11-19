@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinnerDepositLoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+        />
+
+        <Spinner
+            android:id="@+id/spinnerDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Enquire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enquire"
+        />
+    <TextView
+        android:id="@+id/textViewContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text=""
+        />
+
+    <EditText
+        android:id="@+id/money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:hint="Please enter the interest you want to modify"
+        android:maxLength="18"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        ></EditText>
+
+
+    <Button
+        android:id="@+id/Modify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modify"
+        />
+
+    <Button
+        android:id="@+id/historyDepositLoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="History"
+        />
+
+</LinearLayout>
