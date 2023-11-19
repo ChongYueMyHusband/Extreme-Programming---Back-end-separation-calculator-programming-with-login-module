@@ -21,7 +21,5 @@ public interface interestRateService {
 
     public Result<loanInterest> readloanInterestRate(loanInterest loanInterest);
 
-    public List<loanInterest> loanHistory();
 
-    public List<depositInterest> depositHistory();
 }

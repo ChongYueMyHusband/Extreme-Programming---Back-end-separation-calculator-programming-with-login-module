@@ -1,6 +1,7 @@
 package com.example.Service.ServiceImp;
 
 
+import com.example.DAO.calculatorHistoryDAO;
 import com.example.DAO.depositDAO;
 import com.example.DAO.loanIntDAO;
 import com.example.Object.Result;
@@ -37,8 +38,7 @@ public class interestRateServiceImp implements interestRateService {
     @Override
     public Result<depositInterest> readDepositInterestRate(depositInterest depositInterest) {
         Result<depositInterest> result=new Result<>();
-        String Rate= depositDAO.getRate(depositInterest.getPeriod());
-        depositInterest.setRate(Rate);
+        depositDAO.getPeriod(depositInterest.getPeriod());
         result.setResultSuccess("read successfully",depositInterest);
         return result;
     }
@@ -61,20 +61,9 @@ public class interestRateServiceImp implements interestRateService {
     @Override
     public Result<loanInterest> readloanInterestRate(loanInterest loanInterest) {
         Result<loanInterest> result=new Result<>();
-        String Rate= depositDAO.getRate(loanInterest.getPeriod());
-        loanInterest.setRate(Rate);
+        loanIntDAO.getPeriod(loanInterest.getPeriod());
         result.setResultSuccess("read successfully", loanInterest);
         return result;
-    }
-
-    @Override
-    public List<loanInterest> loanHistory() {
-        return loanIntDAO.loanHistory();
-    }
-
-    @Override
-    public List<depositInterest> depositHistory() {
-        return depositDAO.depositHistory();
     }
 
 }
