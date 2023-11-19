@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="  Account:   "
+            android:textColor="@color/black"
+            ></TextView>
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Please input your account"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            ></EditText>
+        ></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Passward:  "
+            android:textColor="@color/black"
+            ></TextView>
+        <EditText
+            android:id="@+id/passward"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Please input your passward"
+            android:maxLength="18"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            ></EditText>
+        ></LinearLayout>
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember"
+        android:layout_alignLeft="@id/passward"
+        android:layout_below="@id/passward"
+        />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Login  "
+        android:layout_marginLeft="15dp"
+        />
+
+    <Button
+        android:id="@+id/regester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="register"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/facialRecognition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="facial Recognition"
+        android:layout_marginLeft="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/facialPicture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+</LinearLayout>
