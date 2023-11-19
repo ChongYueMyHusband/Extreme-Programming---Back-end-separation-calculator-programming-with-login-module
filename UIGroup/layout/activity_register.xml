@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/id_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Account"
+        android:layout_marginTop="10dp"></EditText>
+
+    <EditText
+        android:id="@+id/passward_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Passward"
+        android:layout_marginTop="10dp"></EditText>
+    <EditText
+        android:id="@+id/pass_edit_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reconfirm your Passward"
+        android:layout_marginTop="10dp"></EditText>
+    <EditText
+        android:id="@+id/email_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_marginTop="10dp"></EditText>
+    <Button
+        android:id="@+id/regester2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="register"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        />
+
+
+</LinearLayout>
